@@ -903,15 +903,16 @@
     letter-spacing:-.005em;
     color:#121212
 }
-.Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV{
-    height:calc(100vh - 40px);
-    width:1200px;
-    position:absolute;
-    bottom:0;
-    right:-650px !important;
-    pointer-events:none;
-    z-index:-1;
-    overflow:hidden
+.Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+    height: calc(100vh - 40px);
+    width: clamp(300px, 90vw, 1200px);   /* co giãn */
+    max-width: 100%;                      /* tránh tràn */
+    position: absolute;
+    bottom: 0;
+    right: 0;                             /* để ảnh luôn sát bên phải */
+    transform: translateX(65%);          /* lệch nhẹ theo ý muốn */
+    pointer-events: none;
+    z-index: -1;
 }
 .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV img{
     object-fit:cover;
@@ -3721,7 +3722,7 @@
 }
 .TitleBreakSection_titleBreakSection__x5q1L .TitleBreakSection_titleBreakSectionWrapper__kMV5v h2{
     font-weight:500;
-    font-size:11.19vw;
+     font-size: clamp(24px, 5vw, 240px); /* 👈 giảm lại */
     line-height:.88em;
     text-align:center;
     letter-spacing:-.035em;
@@ -7793,13 +7794,98 @@ a{
 .CookieModal_cookieBannerWrapper__bQnJn .CookieModal_holder__Py8_r .CookieModal_cookieBanner__NStyy .CookieModal_bottom__NZByS .CookieModal_buttons__Vq6hg:last-of-type{
     margin-right:0
 }
-.Loader_digital__uDgfu{
-    font-size: 200px !important;
+/* TEXT LOADER - auto scale */
+/* ===================== LOADER ===================== */
+.Loader_digital__uDgfu,
+.Loader_natural__vPjkE,
+.Loader_personal__w1_OQ {
+    font-size: 150px !important;
 }
-.Loader_natural__vPjkE{
-    font-size: 200px !important;
+
+/* Tablet */
+@media (max-width: 768px) {
+    .Loader_digital__uDgfu,
+    .Loader_natural__vPjkE,
+    .Loader_personal__w1_OQ {
+        font-size: 80px !important;
+    }
 }
-.Loader_personal__w1_OQ{
-    font-size: 200px !important;
+
+/* Mobile chuẩn (iPhone + Samsung ~412px) */
+@media (max-width: 414px) {
+    .Loader_digital__uDgfu,
+    .Loader_natural__vPjkE,
+    .Loader_personal__w1_OQ {
+        font-size: 60px !important;
+    }
 }
-.Hero_heroTitleBetter__MQrkI
+
+/* Mobile nhỏ */
+@media (max-width: 360px) {
+    .Loader_digital__uDgfu,
+    .Loader_natural__vPjkE,
+    .Loader_personal__w1_OQ {
+        font-size: 45px !important;
+    }
+}
+
+
+/* ===================== HERO TITLE ===================== */
+.Hero_hero__EW3HD .Hero_heroHolder__dKj3Y 
+.Hero_heroTitle__dzWAx h1 
+.Hero_heroTitleBetter__MQrkI {
+    font-size: 120px !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y 
+    .Hero_heroTitle__dzWAx h1 
+    .Hero_heroTitleBetter__MQrkI {
+        font-size: 80px !important;
+    }
+   
+}
+
+/* Mobile chuẩn */
+@media (max-width: 414px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y 
+    .Hero_heroTitle__dzWAx h1 
+    .Hero_heroTitleBetter__MQrkI {
+        font-size: 50px !important;
+    }
+    
+}
+
+/* Mobile nhỏ */
+@media (max-width: 360px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y 
+    .Hero_heroTitle__dzWAx h1 
+    .Hero_heroTitleBetter__MQrkI {
+        font-size: 40px !important;
+    }
+   
+}
+/* Tablet */
+@media (max-width: 768px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+        transform: translateX(-10%); 
+        right: clamp(-400px, -12vw, -50px);
+    }
+}
+
+
+@media (max-width: 414px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+        transform: translateX(-20%); 
+        right: clamp(-200px, -10vw, -20px);
+    }
+}
+
+/* Mobile nhỏ (<360px) */
+@media (max-width: 360px) {
+    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+        transform: translateX(-25%); /* nhỏ nhất */
+        right: clamp(-100px, -5vw, 0px);
+    }
+}
