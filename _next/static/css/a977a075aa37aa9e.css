@@ -7807,7 +7807,7 @@ a{
     .Loader_digital__uDgfu,
     .Loader_natural__vPjkE,
     .Loader_personal__w1_OQ {
-        font-size: 80px !important;
+        font-size: 65px !important;
     }
 }
 
@@ -7842,7 +7842,7 @@ a{
     .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y 
     .Hero_heroTitle__dzWAx h1 
     .Hero_heroTitleBetter__MQrkI {
-        font-size: 80px !important;
+        font-size: 60px !important;
     }
    
 }
@@ -7866,26 +7866,32 @@ a{
     }
    
 }
-/* Tablet */
-@media (max-width: 768px) {
-    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
-        transform: translateX(-10%); 
-        right: clamp(-400px, -12vw, -50px);
-    }
+/* iPhone 14 Pro Max (~430px) - xích trái nhiều */
+@media (max-width: 440px) and (min-width: 415px) {
+  .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    transform: translateX(-450px) translateY(-75px);
+  }
 }
 
-
-@media (max-width: 414px) {
-    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
-        transform: translateX(-20%); 
-        right: clamp(-200px, -10vw, -20px);
-    }
+/* iPhone 12 Pro (~390px) - xích trái vừa phải */
+@media (max-width: 414px) and (min-width: 375px) {
+  .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    transform: translateX(-400px) translateY(-140px);
+  }
 }
 
-/* Mobile nhỏ (<360px) */
-@media (max-width: 360px) {
-    .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
-        transform: translateX(-25%); /* nhỏ nhất */
-        right: clamp(-100px, -5vw, 0px);
-    }
+/* Các mobile nhỏ hơn (ví dụ <375px) */
+@media (max-width: 374px) {
+  .Hero_hero__EW3HD .Hero_heroHolder__dKj3Y .Hero_heroImg__XUqEV {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    transform: translateX(-350px) translateY(-140px);
+  }
 }

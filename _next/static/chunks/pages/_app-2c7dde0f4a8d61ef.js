@@ -12461,7 +12461,7 @@
                             className: eo().stickMobileParagraphOne,
                             children: (0, c.jsx)("p", {
                                 className: "stick__mobile__paragraph__one",
-                                children: "KUPK replaces traditional accounts with private key identity. Instead of email or phone numbers, users connect using their crypto wallet, giving them full control over their digital identity."
+                                children: "KUPK replaces traditional accounts with private key identity. Instead of email or phone numbers, users connect using their private key, giving them full control over their digital identity."
                             })
                         }), (0, c.jsx)("div", {
                             className: eo().stickMobileParagraphTwo,
@@ -12479,7 +12479,7 @@
                                 className: "".concat(eo().stickParagraphOne, " ").concat(eo().desktopParagraph, " stick__paragraph__one__holder"),
                                 children: (0, c.jsx)("p", {
                                     className: "stick__paragraph__one",
-                                    children: "KUPK replaces traditional accounts with private key identity. Instead of email or phone numbers, users connect using their crypto wallet, giving them full control over their digital identity."
+                                    children: "KUPK replaces traditional accounts with private key identity. Instead of email or phone numbers, users connect using their private key, giving them full control over their digital identity."
                                 })
                             }), (0, c.jsxs)("div", {
                                 className: eo().titleHolder,
@@ -14623,7 +14623,7 @@
                                     }), (0, c.jsxs)("div", {
                                         className: "".concat(ep().appScreenText, " ").concat(ep().appScreenTextTwo, " app__screen__text__two"),
                                         children: [(0, c.jsx)("p", {
-                                            children: "Your crypto wallet becomes your identity inside KUPK. Connect instantly and start communicating without creating accounts or passwords. Messages remain secure while you maintain full ownership of your digital identity."
+                                            children: ""
                                         }), (0, c.jsx)("p", {
                                             children: "KUPK enables secure peer-to-peer messaging powered by end-to-end encryption. Conversations travel through decentralized nodes instead of centralized servers, ensuring privacy and resilience across the network."
                                         })]
