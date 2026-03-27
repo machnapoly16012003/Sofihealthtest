@@ -7895,3 +7895,25 @@ a{
     transform: translateX(-350px) translateY(-140px);
   }
 }
+@media (max-width: 768px) {
+  /* Dịch toàn bộ article sang phải trên mobile/tablet */
+  .Stick_stickFeature__zuAMK {
+    position: relative;   /* cần để left hiệu lực */
+    left: 80px;          
+    transition: left 0.3s ease; /* mượt khi resize */
+  }
+}
+
+/* Mobile nhỏ hơn 480px */
+@media (max-width: 480px) {
+  .Stick_stickFeature__zuAMK {
+    left: 60px;           /* giảm dịch sang phải cho điện thoại nhỏ */
+  }
+}
+
+/* Mobile rất nhỏ <= 360px */
+@media (max-width: 360px) {
+  .Stick_stickFeature__zuAMK {
+    left: 30px;           
+  }
+}
