@@ -7917,3 +7917,15 @@ a{
     left: 30px;           
   }
 }
+/* Container */
+
+
+.Application_passifloraHolder__9wq8W img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 352px;
+  height: auto;         
+  transform: translateX(-50%); 
+  object-fit: cover;      
+}
